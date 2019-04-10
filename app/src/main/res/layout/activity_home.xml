@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.angadi.tripmanagementa.Custum.PagerEnabledSlidingPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_panel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:id="@+id/lin_layout_first"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/slide_menu_back_btn"
+            android:layout_width="wrap_content"
+            android:tint="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/menu_back_ic"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:id="@+id/lin_layout_second"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/statusbar"
+            android:background="@color/colorPrimary">
+            <ImageButton
+                android:id="@+id/open_menu_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/arrow_icon"
+                android:textSize="26sp"/>
+
+            <ImageButton
+                android:id="@+id/back_menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+
+                android:textSize="26sp"
+                android:visibility="gone"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/order_status_time"
+                android:layout_toRightOf="@+id/open_menu_btn"
+                android:layout_toLeftOf="@+id/cart_image_view"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_bar_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/live_time_tv"
+                    android:orientation="vertical"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/main_bar_logo_img"
+                android:layout_width="200dp"
+                android:contentDescription="Label"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/arrow_icon"/>
+
+
+            <com.mrdelivery.grubcourier1.custom.view.CartImageView
+                android:id="@+id/cart_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</com.angadi.tripmanagementa.Custum.PagerEnabledSlidingPanelLayout>
+
+

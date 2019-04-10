@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/otp_security"
+            android:textStyle="bold"
+            android:textSize="@dimen/edit_text_size_headrer"
+            android:textColor="@color/orange"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/varifying_OTP"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normal_text_16"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1.4"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/orange_filled_circle"
+                        android:layout_height="30dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:src="@mipmap/mobile_white_icon"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/white_circle_orange_border"
+                        android:layout_height="30dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/EdittextFirst"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="@color/blue"
+                            android:background="@color/transparent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/white_circle_orange_border"
+                        android:layout_height="30dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/EdittextSecond"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="@color/blue"
+                            android:background="@color/transparent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/white_circle_orange_border"
+                        android:layout_height="30dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/EdittextThird"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="@color/blue"
+                            android:background="@color/transparent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/white_circle_orange_border"
+                        android:layout_height="30dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/EdittextFourth"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="@color/blue"
+                            android:background="@color/transparent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/white_circle_orange_border"
+                    android:layout_height="30dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/EdittextFifth"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/blue"
+                        android:background="@color/transparent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/white_circle_orange_border"
+                    android:layout_height="30dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/EdittextSixth"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/blue"
+                        android:background="@color/transparent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="17dp"
+                        android:gravity="center"
+                        android:background="@drawable/blue_filled_circle"
+                        android:layout_height="17dp">
+                        <ImageView
+                            android:layout_width="7dp"
+                            android:src="@mipmap/plus_icon"
+                            android:layout_height="7dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.65"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edit_text_size_12dp"
+                        android:text="@string/add_new_mobile_number"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:gravity="left|center"
+                    android:id="@+id/LinLayoutResendOTP"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/edit_text_size_12dp"
+                        android:text="@string/Resend_OTP"
+                        android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/orange_filled_layout_border"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent"
+                android:text="@string/varify"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:id="@+id/varify_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bottom_button_text_size"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="   Logout   "
+            android:id="@+id/TextviewLogout"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">Planet Zoom</string>
+    <string name="title_activity_maps">Planet Zoom</string>
+    <string name="varifying_OTP">Varify mobile OTP</string>
+    <string name="Waiting_for_OTP">Waiting for OTP</string>
+    <string name="Sending_OTP">Sending OTP to your Provider</string>
+    <string name="Creating_OTP">Creating OTP</string>
+    <string name="Resend_OTP">Resend OTP</string>
+    <string name="Varifying">Varifying</string>
+    <string name="NEXT">NEXT</string>
+    <string name="Varification">Varification</string>
+    <string name="name">Name*</string>
+    <string name="name_without_star">Name</string>
+    <string name="E_mail">E-Mail*</string>
+    <string name="E_mailwithotr_star">E-mail</string>
+    <string name="Mobile_number">Mobile Number*</string>
+    <string name="Mobile_number_without_star">Mobile Number</string>
+    <string name="adharcard">Upload your Adhar here*</string>
+    <string name="address">Address</string>
+    <string name="state">State*</string>
+    <string name="city">City</string>
+    <string name="done">Done</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <!--<string name="skip">Skip</string>-->
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="adhar_number">Adhar Number</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="select">Select</string>
+    <string name="rupees">\u20B9</string>
+    <string name="label_send">Send</string>
+    <string name="label_error_incorrect_phone">label_error_incorrect_phone</string>
+    <string name="register">Register</string>
+    <string name="create_password">Create Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="please_login">Please Login</string>
+    <string name="thank_you">Thank You</string>
+    <string name="success"> Registration Success</string>
+    <string name="got_it">Got It</string>
+    <string name="trip_management">Trip management</string>
+    <string name="family_tree">Family Tree</string>
+    <string name="shopping">Shopping</string>
+    <string name="Rs">\u20B9</string>
+    <string name="logistic">Logistic</string>
+    <string name="settings">Settings</string>
+    <string name="invite_vendotrs">Invite Vendors</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="policy">Policy</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="perplanned">Perplaned Travel and trip Solution</string>
+    <string name="offering">Offering a range of customisable options,</string>
+    <string name="powerful">powerful management tools and</string>
+    <string name="reporting_functions">reporting functions,</string>
+    <string name="copyright">\u00a9</string>
+    <string name="varify">Varify</string>
+    <string name="otp_security">OTP &amp; Security</string>
+    <string name="terms">Terms of Services &amp; Conditions</string>
+    <string name="terms_and_conditions">Terms  &amp; Conditions</string>
+    <string name="add_new_mobile_number">Add New Mobile Number</string>
+    <string name="varify_email_security">Varify Email Security</string>
+    <string name="Resend_email">Resend Email</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="your_registration">Your Registration</string>
+    <string name="completed_successfully">Completed Successfully</string>
+    <string name="unique_id">Unique ID</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="forgot_unique_id">Forgot UniqueID ? </string>
+    <string name="forgot_password_without_questionmark">Forgot Password </string>
+    <string name="forgot_unique_id_without_question_mark">Forgot UniqueID  </string>
+    <string name="help">Help</string>
+    <string name="unread">Unread</string>
+    <string name="live_location">Live Location</string>
+    <string name="favorite">Favorites</string>
+    <string name="history">History</string>
+    <string name="notification">Notification</string>
+    <string name="create_qr_code">QR code</string>
+    <string name="task">Task</string>
+    <string name="go_google">Go Google</string>
+    <string name="change_password">Change Password</string>
+    <string name="matched">Matched</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_here">Login Here</string>
+    <string name="new_plan">   New Plan   </string>
+    <string name="start_location">Start Location</string>
+    <string name="start_trip">Plan a Trip</string>
+    <string name="more_info">More Info</string>
+    <string name="more_info1">The iphone6s was introduced on September 9 2015 at Apples event at Sun fransisko </string>
+    <string name="get_directions">Get Directions</string>
+    <string name="share_to_chat">Share to Chat</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="destination">Destination</string>
+    <string name="scan_me">Scan Me</string>
+    <string name="submit">Submit</string>
+    <string name="add_breakpoints">Add Break points</string>
+    <string name="choose_travel_type">Choose Travel Type</string>
+    <string name="start_a_msg">Start a message</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="upload"> Upload</string>
+    <string name="location">Location</string>
+    <string name="website">Website</string>
+    <string name="desciption">Description</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="check_your_internet">Please Check your Internet</string>
+    <string name="breakpoints">Break Points</string>
+    <string name="food">Food</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="nearby">Near by</string>
+    <string name="veg">VEG</string>
+    <string name="non_veg">NON-VEG</string>
+    <string name="addons">ADDONS</string>
+    <string name="place_order">Place Order</string>
+    <string name="cancel">Cancel</string>
+    <string name="real_estate">Real esatate</string>
+
+
+    <string-array name="user_slide_menu_icons_normal">
+        <item>@mipmap/trip_slidemenu_icon</item>
+        <item>@mipmap/family_tree_slidemenu_icon</item>
+        <item>@mipmap/shopping_slidemenu_icon</item>
+        <item>@mipmap/logistic_slidemenu_icon</item>
+        <item>@mipmap/setting_slidemenu_icon</item>
+        <item>@mipmap/invite_slidemenu_icon</item>
+
+        <item>@mipmap/contactus_slidemenu_icon</item>
+        <item>@mipmap/policy_slidemenu_icon</item>
+        <item>@mipmap/about_slidemenu_icon</item>
+        <item>@mipmap/logout_slidemenu_icon</item>
+
+
+    </string-array>
+
+
+    <string-array name="temp_user_slide_menu_titles">
+
+        <item>@string/trip_management</item>
+        <item>@string/family_tree</item>
+        <item>@string/shopping</item>
+        <item>@string/logistic</item>
+        <item>@string/settings</item>
+
+        <item>@string/invite_vendotrs</item>
+        <item>@string/contact_us</item>
+        <item>@string/policy</item>
+        <item>@string/about</item>
+        <item>@string/logout</item>
+
+    </string-array>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="send">Send</string>
+    <string name="events">Events</string>
+    <string name="postadd">Post Add</string>
+    <string name="landline">Landline</string>
+    <string name="accountID">AccountID</string>
+    <string name="price_cost">Price/Cost</string>
+    <string name="validity">Validity</string>
+    <string name="quality">Quality</string>
+    <string name="quantity">Quantity</string>
+    <string name="offers">Offers</string>
+    <string name="info">Info</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="pay">Pay</string>
+    <string name="choose_a_file">Choose a file</string>
+    <string name="planetzoomid">Planet Zoom ID</string>
+    <string name="details">Details</string>
+    <string name="address_scan_result">Address:</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="update_details">Update Details</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="ratings">Ratings</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="attachments">Attachments</string>
+    <string name="no_favorites_yet">No favorites yet</string>
+    <string name="termsconditions">I agree to Planetzoom\'s</string>
+    <string name="search_here">Search here</string>
+    <string name="close">Close</string>
+    <string name="add_items">Add Items</string>
+    <string name="email_or_unique">Email/Unique ID</string>
+    <string name="subproducts">Sub Products</string>
+    <string name="alert">Alert</string>
+    <string name="send_to">Send to...</string>
+    <string name="events_name">Event Name</string>
+    <string name="orderhistory">Order History</string>
+    <string name="no_orders_yet">No orders yet</string>
+    <string name="ecard">E-Visitingcard</string>
+    <string name="create_ecard">Create E-card</string>
+    <string name="ownlist">Own List</string>
+    <string name="shared_to_you">Sahred to you</string>
+    <string name="shared_by_you">Sahred by you</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="title_activity_sub_cat_all">View All Sub Category</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set product image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set product image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="e_visiting_card">E-Visiting Card</string>
+    <string name="upload_events">Upload Event</string>
+    <string name="gallery">Gallery</string>
+</resources>

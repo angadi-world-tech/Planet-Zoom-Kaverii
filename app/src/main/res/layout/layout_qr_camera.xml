@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:keepScreenOn="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="left|center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:id="@+id/LinlayoutBack"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@mipmap/back"
+                    android:tint="@color/white"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right|center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical"
+                android:id="@+id/LinlayoutSkip"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Skip"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="0.9"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/LinlayoutFrontCam"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@mipmap/front_cam"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/capturePhoto"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/circle_transperent"
+                android:layout_height="70dp">
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_circle"
+                    android:layout_height="50dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/LinlayoutGallery"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@mipmap/gallery_new"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/capturePhoto"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_height="90dp">-->
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

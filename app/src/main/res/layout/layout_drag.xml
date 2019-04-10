@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:clickable="true"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/image"
+        android:src="@drawable/live_location">
+    </ImageView>
+    <!--<ImageView android:layout_y="30dip" android:layout_x="118dip"-->
+        <!--android:layout_width="50sp" android:layout_height="50sp"-->
+        <!--android:layout_marginTop="100dp" android:id="@+id/image1"-->
+        <!--android:src="@drawable/black_circle">-->
+    <!--</ImageView>-->
+</RelativeLayout>

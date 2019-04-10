@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Location_Tracker">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:id="@+id/linear_Track"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:id="@+id/LinLayoutBack"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="18dp"
+                android:id="@+id/imageview"
+                android:src="@mipmap/back"
+                android:layout_height="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:weightSum="1.0"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/r1"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Live Location"
+                    android:id="@+id/id_name"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold"
+                    android:paddingRight="5dp"
+                    android:layout_below="@+id/NameLinLayout"
+                    android:layout_toRightOf="@+id/ImageViewLinLayout"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:id="@id/LinlayoutPlanetZoom"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/planet_zoom"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:id="@+id/LinlayoutChat"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@mipmap/chat_icon"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/b_action"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_below="@+id/linear_Track"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:tag="s"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="12dp"-->
+        <!--android:onClick="OnButtonClick"-->
+        <!--android:background="@drawable/circle_btn_bg"-->
+        <!--android:text="Start Tracking"-->
+        <!--android:textColor="@android:color/white" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="START BACKGROUND TRACKING"-->
+        <!--android:id="@+id/b_service"-->
+        <!--android:tag="s"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:onClick="OnButtonClick"-->
+        <!--style="@style/Base.Widget.AppCompat.Button.Colored" />-->
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_fragment"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/linear_Track"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/shareLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/linear_Track"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/shareButton"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:gravity="end"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@mipmap/location_red"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="shareLocation"-->
+            <!--android:text="share_location" />-->
+
+
+     <!---->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center|fill_vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/b_action"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/linear_Track"
+            android:tag="s"
+            android:layout_marginBottom="1dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:onClick="OnButtonClick"
+            android:background="@drawable/circle_btn_bg"
+            android:text="Start Tracking"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:elevation="1dp"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    tools:ignore="UnusedAttribute">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:elevation="1dp"
+            tools:ignore="NewApi">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingLeft="3dp"
+                android:elevation="1dp"
+                android:paddingRight="3dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imageView1"
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/app_icon"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="8dip"
+                        app:riv_oval="false" />
+
+                    <com.angadi.tripmanagementa.Activities.SubCategory.Helper.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:id="@+id/cust_txt_product_name"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#585e66"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <com.angadi.tripmanagementa.Activities.SubCategory.Helper.TextViewSFProDisplaySemibold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cust_txt_product_price"
+                            android:text="Rs.00.00"
+                            android:textSize="13sp"
+                            android:textColor="@color/txt_color"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_clock1"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <com.angadi.tripmanagementa.Activities.SubCategory.Helper.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_color"
+                            android:textSize="7sp"
+                            android:id="@+id/cust_txt_product_date_time"
+                            android:layout_marginLeft="4dp"
+                            android:layout_gravity="center"
+                            android:text="00.00.0000"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/cust_img_edit"
+                            android:src="@drawable/ic_edit"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <com.angadi.tripmanagementa.Activities.SubCategory.Helper.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_color"
+                            android:textSize="7sp"
+                            android:id="@+id/cust_txt_product_edit"
+                            android:layout_marginLeft="4dp"
+                            android:layout_gravity="center"
+                            android:text="Edit"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/cust_img_delete"
+                            android:src="@drawable/ic_delete"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <com.angadi.tripmanagementa.Activities.SubCategory.Helper.TextViewSFProDisplayMedium
+                            android:id="@+id/cust_txt_product_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:text="Delete"
+                            android:textColor="@color/txt_color"
+                            android:textSize="7sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+</RelativeLayout>

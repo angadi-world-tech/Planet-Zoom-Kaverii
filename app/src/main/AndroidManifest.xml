@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.angadi.tripmanagementa">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/app_icon"
+        tools:replace="android:allowBackup"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:name=".Application.TripManagement"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activities.SubCategory.SubCatNew"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".Activities.SubCategory.SubCatViewAll"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".Activities.SubCategory.SubCatUpdate"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            tools:ignore="DuplicateActivity">
+
+        </activity> <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.SubCategory.Helper.ImagePickerActivity" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.SubCategory.SubCatAll"
+            android:label="@string/title_activity_sub_cat_all"
+            android:parentActivityName=".Activities.PicturePreviewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.PicturePreviewActivity" />
+        </activity>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.  //AIzaSyBRqZwPgkYnfeeh_P0SrJJIqHGRNo0l-9c
+
+             //AIzaSyCtt_MIf5EvzVAjE1oF152nuOG1sA_-WfI
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Activities.WelcomeActivity"
+            android:noHistory="true"
+            android:label="@string/title_activity_maps"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".Activities.PicturePreviewActivity" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activities.Qrcoderesult">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="product"
+                    android:pathPrefix="/view"
+                    android:scheme="planetzoom">
+
+                </data>
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MapsActivity"/>
+         <activity android:name=".Activities.SplashActivity"></activity>
+        <activity android:name=".Activities.LoginActivity"></activity>
+        <activity android:name=".Activities.Real_estate" android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".Activities.Location_Tracker"/>
+        <activity android:name=".Activities.RegistrationActivity"></activity>
+        <activity android:name=".Activities.ForgotPasswordActivity"></activity>
+        <activity android:name=".Activities.dummy"></activity>
+        <activity android:name=".Activities.ProductPhotoViewActivity"></activity>
+        <activity android:name=".Activities.Imagesactivity"></activity>
+        <activity android:name=".Activities.ForgotUniqueIDActivity"></activity>
+        <activity android:name=".Activities.VarifyOTPActiivty"></activity>
+        <activity android:name=".Activities.VarifyEmailActivity"></activity>
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3640481354a0110df03c5114200b001aaab1fd05"/>
+
+        <service
+            android:name=".LocationJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".UploadLocationService"
+            android:exported="true" />
+        <service
+            android:name=".Custum.Notification">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Custum.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name=".Custum.NotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--<data android:scheme="www.planetzoom"/>-->
+            <!--<data android:host="https"/>-->
+        <!--</intent-filter>-->
+
+
+        <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--<data android:host="www.planetzoom.co.in" android:scheme="http" />-->
+        <!--</intent-filter>-->
+
+    </application>
+
+</manifest>

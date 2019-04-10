@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Bar code Scanner window-->
+
+
+    <com.angadi.tripmanagementa.Custum.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.angadi.tripmanagementa.Custum.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.angadi.tripmanagementa.Custum.CameraSourcePreview>
+
+    <!--<com.journeyapps.barcodescanner.BarcodeView-->
+        <!--android:id="@+id/zxing_barcode_surface"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:zxing_use_texture_view="false"-->
+        <!--android:visibility="gone"-->
+        <!--app:zxing_preview_scaling_strategy="centerCrop"-->
+        <!--app:zxing_framing_rect_height="500dp"-->
+        <!--app:zxing_framing_rect_width="500dp"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <!--<View-->
+        <!--android:layout_width="250dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@drawable/qr_testing"-->
+        <!--android:layout_gravity="center">-->
+    <!--</View>-->
+    <RelativeLayout android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1.0"
+            android:id="@+id/nameid"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.25"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/Linlayoutfirst"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:id="@+id/LinlayoutCreateQRCode"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="45dp"
+                            android:background="@drawable/orange_filled_circle"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="45dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@mipmap/qr_code_icon"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/create_qr_code"
+                            android:id="@+id/QRIndication"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="1.0"
+                        android:background="@drawable/white_layoyt_border"
+                        android:layout_height="50dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.15"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@mipmap/app_icon1"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left|center"
+                            android:layout_height="match_parent">
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:textColor="#000"
+                                android:paddingRight="2dp"
+                                android:id="@+id/autocomplete"
+                                android:focusable="false"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:textSize="12dp"
+                                android:inputType="textCapWords"
+                                android:singleLine="true"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/search_here"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.15"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:src="@mipmap/mike_icon"
+                                android:layout_height="18dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/LinLayoutTask"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="45dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/orange_filled_circle"
+                        android:layout_height="45dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/camera_image1"
+                            android:src="@mipmap/add_image"
+                            android:layout_height="20dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/events"
+                        android:id="@+id/TaskIndication"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--second Layout-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.25"
+                android:visibility="gone"
+                android:id="@+id/LinlayoutAutocomplete"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.6"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0"
+                        android:background="@drawable/blue_layout_border"
+                        android:layout_height="50dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.1"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@drawable/planet_zoom"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.9"
+                            android:gravity="left|center"
+                            android:layout_height="match_parent">
+                            <AutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/autocomplete1"
+                                android:layout_gravity="left|center"
+                                android:gravity="left|center"
+                                android:paddingRight="3dp"
+                                android:textSize="12dp"
+                                android:inputType="textCapWords"
+                                android:singleLine="true"
+                                android:background="@android:color/transparent"
+                                android:hint="go google"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--end of second layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/LinlayoutQRScanner"
+                android:visibility="visible"
+                android:gravity="center"
+                android:weightSum="1.0"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="top|center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/LinLayoutPopUp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="left|top|center"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_marginTop="7dp"
+                            android:id="@+id/LinLayoutQRCamera"
+                            android:layout_marginBottom="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/orange_filled_circle"
+                            android:layout_height="45dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@mipmap/qr_code_icon"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:gravity="center"
+                            android:id="@+id/LinLayoutQRCameraSecond"
+                            android:background="@drawable/orange_filled_circle"
+                            android:layout_height="45dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:src="@mipmap/qr_code_icon"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/myImage"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.2"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/black_circle"
+                    android:id="@+id/LinlayoutFlash"
+                    android:layout_marginRight="7dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:id="@+id/ImageviewFlash"
+                        android:src="@mipmap/flash_off"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/black_circle"
+                    android:id="@+id/LinlayoutGalleryBottom"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/cameranew"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/black_circle"
+                    android:id="@+id/LinlayoutGalleryGallerBottom"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/add_image"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--<com.journeyapps.barcodescanner.ViewfinderView-->
+        <!--android:id="@+id/zxing_viewfinder_view"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:zxing_possible_result_points="@color/zxing_transparent"-->
+        <!--app:zxing_result_view="@color/blue"-->
+        <!--app:zxing_viewfinder_laser="@color/blue"-->
+        <!--app:zxing_viewfinder_mask="@color/transperant_black_qr" />-->
+
+
+
+</merge>

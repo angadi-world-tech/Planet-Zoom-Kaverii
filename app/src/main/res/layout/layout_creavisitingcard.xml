@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0"
+        android:layout_height="match_parent">
+        '
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/orange"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:id="@+id/LinLayoutBack"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:id="@+id/imageview"
+                    android:src="@mipmap/back"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.55"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1.0"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/e_visiting_card"
+                    android:id="@+id/visitingcardIndicationTV"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:id="@+id/LinLayoutShare"
+                android:visibility="visible"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:tint="@color/white"
+                    android:src="@mipmap/share"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.35"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.55"
+            android:layout_height="0dp"></LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

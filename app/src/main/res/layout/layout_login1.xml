@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root_view"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/Linlayoutfirst"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/login"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1.0"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/LinlayoutUnique"
+                android:layout_weight="0.5"
+                android:gravity="left|center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:id="@+id/ImageviewUnique"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/unique_id"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/blue"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/LinLayoutAdhar"
+                android:layout_marginRight="20dp"
+                android:gravity="right|center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:id="@+id/ImageviewAdgar"
+
+                    android:tint="@color/blue"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/adhar_number"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/blue"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/LinlayoutUniqueIDTV"
+                android:gravity="left|center"
+                android:layout_gravity="left|center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/unique_id"
+                    android:id="@+id/TextViewUniqieID"
+                    android:textColor="@color/orange"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/LinlayoutUniqueIDField"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/registration_edittext_border"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/ImageviewUniqueId"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/profile_orange_icon"
+                    android:layout_height="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:id="@+id/ViewUniqueID"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/orange"
+                    android:layout_height="fill_parent"></View>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:id="@+id/EditTextUniqueId"
+                    android:singleLine="true"
+                    android:gravity="left|center"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_gravity="left|center"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edit_text_size"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:layout_gravity="right|center"
+                android:id="@+id/TV_ForgotUniqueID"
+                android:textSize="13dp"
+                android:text="@string/forgot_unique_id"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:gravity="left|center"
+                android:layout_gravity="left|center"
+                android:id="@+id/LinLayoutAdharTV"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/adhar_number"
+                    android:id="@+id/TextViewAdgarNumber"
+                    android:textColor="@color/orange"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/LinLayoutField"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/registration_edittext_border"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ImageviewadharNumber"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="23dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ViewAdharnumber"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/orange"
+                    android:layout_height="fill_parent"></View>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:singleLine="true"
+                    android:gravity="left|center"
+                    android:id="@+id/EditTextAdharNumber"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_gravity="left|center"
+                    android:background="@null"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edit_text_size"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="left|center"
+                android:layout_gravity="left|center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/password"
+                    android:id="@+id/TextViewAdgarPassword"
+                    android:textColor="@color/orange"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/registration_edittext_border"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/Imageviewpassword"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/orange_password_icon"
+                    android:layout_height="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ViewPassword"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/orange"
+                    android:layout_height="fill_parent"></View>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:singleLine="true"
+                    android:password="true"
+                    android:id="@+id/EditTextPassword"
+                    android:gravity="left|center"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_gravity="left|center"
+                    android:background="@null"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/edit_text_size"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:layout_gravity="right|center"
+                        android:id="@+id/TV_change_password"
+                        android:textSize="13dp"
+                        android:text="@string/change_password"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/LinlayoutForgotpaswd"
+                    android:gravity="right|center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:layout_gravity="right|center"
+                        android:id="@+id/TV_Forgotpassword"
+                        android:textSize="13dp"
+                        android:text="@string/forgot_password"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp">
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/login_btn_selector"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:id="@+id/varify_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bottom_button_text_size"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

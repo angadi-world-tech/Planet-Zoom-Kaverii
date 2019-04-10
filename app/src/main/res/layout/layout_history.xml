@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/orange"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:id="@+id/LinLayoutBack"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:id="@+id/imageview"
+                    android:src="@mipmap/back"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.65"
+                android:orientation="horizontal"
+                android:gravity="left|center"
+                android:weightSum="1.0"
+                android:layout_height="match_parent">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:textSize="15dp"
+                   android:id="@+id/HeaderTectview"
+                   android:textColor="@color/white"
+                   android:text="@string/orderhistory"
+                   android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:visibility="gone"
+            android:id="@+id/LinlayoutEmptyContainer"
+            android:gravity="center"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/no_orders_yet"
+                android:id="@+id/TVNoOredersYet"
+                android:textColor="@color/darkgray"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:id="@+id/LinLayoutListview"
+            android:layout_height="0dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/OrdersListview"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

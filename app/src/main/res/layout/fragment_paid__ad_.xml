@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:id="@+id/LinLayoutBack"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:id="@+id/imageview"
+                        android:src="@mipmap/back"
+                        android:layout_height="18dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:orientation="horizontal"
+                    android:gravity="left|center"
+                    android:weightSum="1.0"
+                    android:layout_height="match_parent">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/r1"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/profile_tranperant_border"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="35dp"
+                            android:id="@+id/ImageViewLinLayout"
+                            android:src="@drawable/person_image"
+                            android:layout_height="35dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Sravankumar"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:id="@+id/NameLinLayout"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:layout_toRightOf="@+id/ImageViewLinLayout"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="123456789"
+                            android:id="@+id/id_name"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:layout_below="@+id/NameLinLayout"
+                            android:layout_toRightOf="@+id/ImageViewLinLayout"
+                            android:layout_height="wrap_content" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/r1"
+                        android:layout_gravity="center"
+                        android:id="@+id/r2"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/imageview_arrow"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:id="@id/LinlayoutPlanetZoom"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:src="@drawable/planet_zoom"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/LinlayoutChat"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:src="@mipmap/chat_icon"
+                        android:layout_height="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".05"
+            android:id="@+id/Linlayoutfirst"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="0dp">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="Paid AD Rate Card"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:weightSum="0">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_margin="@dimen/edit_text_size"
+                android:layout_height="fill_parent" >
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:id="@+id/nameEdLinLayout"
+                            android:background="@drawable/orange_white_border"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:text="Welcome to Planetzoom"
+                                android:id="@+id/txtDesc1"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:textSize="@dimen/edit_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:layout_marginRight="@dimen/edit_text_size"
+                                android:background="@android:color/holo_orange_dark" />
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:text="Are one of the UKï¿½s leading retailers, with over 21 million people visiting our stores each week. We offer stylish, high quality, great value clothing and home products, as well as outstanding quality foods, responsibly sourced from around 2,000 suppliers globally. We employ over 75,000 people in the UK and abroad, and have over 600 UK stores, plus an expanding international business. We are the number one provider of womenswear and lingerie in the UK, and are rapidly growing our market share in menswear, kidswear and home, due in part to our growing online business. Overall, our clothing and homeware sales account for 49% of our business. The other 51% of our business is in food, where we sell everything from fresh produce and groceries, to partly-prepared meals and ready meals. Now more than ever, weï¿½re also known for our green credentials as a result of our five-year eco plan, Plan A, which will see us, amongst other things, become carbon neutral and send no waste to landfill by 2012."
+                                android:id="@+id/txtDesc"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textStyle="bold"
+                                android:lines="4"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/edit_text_size"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="499 / 6 months"
+                                    android:id="@+id/txtDesc3"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_alignRight="@+id/txtDesc3"
+                                    android:text="Start"
+                                    android:layout_margin="5dp"
+                                    android:padding="4dp"
+                                    android:id="@+id/txtDesc4"
+                                    android:gravity="right|center_vertical"
+                                    android:textColor="@color/orange"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <!--start of name layout-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/nameEdLinLayout12"
+                            android:background="@drawable/blue_white_border"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:text="Welcome to Planetzoom"
+                                android:id="@+id/txtDesc14"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:textSize="@dimen/edit_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:layout_marginRight="@dimen/edit_text_size"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:text="Are one of the UKï¿½s leading retailers, with over 21 million people visiting our stores each week. We offer stylish, high quality, great value clothing and home products, as well as outstanding quality foods, responsibly sourced from around 2,000 suppliers globally. We employ over 75,000 people in the UK and abroad, and have over 600 UK stores, plus an expanding international business. We are the number one provider of womenswear and lingerie in the UK, and are rapidly growing our market share in menswear, kidswear and home, due in part to our growing online business. Overall, our clothing and homeware sales account for 49% of our business. The other 51% of our business is in food, where we sell everything from fresh produce and groceries, to partly-prepared meals and ready meals. Now more than ever, weï¿½re also known for our green credentials as a result of our five-year eco plan, Plan A, which will see us, amongst other things, become carbon neutral and send no waste to landfill by 2012."
+                                android:id="@+id/txtDesc9"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textStyle="bold"
+                                android:lines="4"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/edit_text_size"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="499 / 6 months"
+                                    android:id="@+id/txtDesc10"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_alignRight="@+id/txtDesc10"
+                                    android:text="Start"
+                                    android:layout_margin="5dp"
+                                    android:padding="4dp"
+                                    android:id="@+id/txtDesc11"
+                                    android:gravity="right|center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <!--end of name layout-->
+
+                        <!--start of email layout-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/nameEdLinLayout18"
+                            android:background="@drawable/purple_color_boder"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:text="Welcome to Planetzoom"
+                                android:id="@+id/txtDesc17"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:textSize="@dimen/edit_text_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:layout_marginRight="@dimen/edit_text_size"
+                                android:background="@android:color/white" />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:text="Are one of the UKï¿½s leading retailers, with over 21 million people visiting our stores each week. We offer stylish, high quality, great value clothing and home products, as well as outstanding quality foods, responsibly sourced from around 2,000 suppliers globally. We employ over 75,000 people in the UK and abroad, and have over 600 UK stores, plus an expanding international business. We are the number one provider of womenswear and lingerie in the UK, and are rapidly growing our market share in menswear, kidswear and home, due in part to our growing online business. Overall, our clothing and homeware sales account for 49% of our business. The other 51% of our business is in food, where we sell everything from fresh produce and groceries, to partly-prepared meals and ready meals. Now more than ever, weï¿½re also known for our green credentials as a result of our five-year eco plan, Plan A, which will see us, amongst other things, become carbon neutral and send no waste to landfill by 2012."
+                                android:id="@+id/txtDesc16"
+                                android:maxLines="3"
+                                android:layout_marginLeft="@dimen/edit_text_size"
+                                android:textStyle="bold"
+                                android:lines="4"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/edit_text_size"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="499 / 6 months"
+                                    android:id="@+id/txtDesc19"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:padding="4dp"
+                                    android:layout_margin="5dp"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_alignRight="@+id/txtDesc19"
+                                    android:text="Start"
+                                    android:layout_margin="5dp"
+                                    android:padding="4dp"
+                                    android:id="@+id/txtDesc15"
+                                    android:gravity="right|center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/edit_text_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <!--end of email layout-->
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/circleshapwithelevation"
+            android:layout_marginLeft="0dp"
+            android:gravity="bottom"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="-10dp"
+            android:layout_height="wrap_content"
+           >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="0dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="Help"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:id="@+id/location"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/help"
+                        android:layout_height="18dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

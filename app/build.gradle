@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'trip'
+            keyPassword 'trip123'
+            // storeFile file('D:/AndroidProjrcts/Apkfile/trip.jks')
+            //E:\Apkfile
+
+            storeFile file('E:/Apkfile/trip.jks')
+            storePassword 'trip123'
+        }
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.angadi.tripmanagementa"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':library')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:exifinterface:28.0.0'  //camera
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-places:15.0.1'
+    implementation 'com.google.android.gms:play-services-vision:15.0.1' //For zoom
+
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.githang:stepview:0.1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.ss.bannerslider:bannerslider:1.8.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'pub.devrel:easypermissions:0.2.0'
+
+    //Volley
+    implementation 'com.balysv:material-ripple:1.0.2'
+    //Rippel Effect
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.shuhart.stepview:stepview:1.4.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+   // implementation 'com.outlander.showcaseview:showcaseview:1.3.0'
+
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    //retrifit
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //retrofit
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:6.2'
+    implementation 'com.hbb20:ccp:2.2.2'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //Glide
+    implementation 'com.otaliastudios:cameraview:1.6.0'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    // QR
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    //QR
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'net.gotev:uploadservice:2.1'
+    implementation 'org.apache.commons:commons-lang3:3.4' //For Emoji
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.patrickpissurno:ripple-effect:1.3.1'    //Ripple
+
+    implementation 'io.intercom.android:intercom-sdk:5.+' //intercom
+    implementation 'io.intercom.android:intercom-sdk-fcm:5.+'
+    implementation 'com.google.firebase:firebase-messaging:17.+'
+
+    implementation 'com.google.android.gms:play-services-appinvite:16.0.4'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+
+    implementation "com.karumi:dexter:5.0.0"
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    apply plugin: 'io.fabric'
+
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+

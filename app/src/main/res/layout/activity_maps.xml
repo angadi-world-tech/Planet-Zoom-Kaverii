@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:id="@+id/id"
+android:layout_height="match_parent"
+tools:context=".Activities.MapsActivity" >
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+<Button
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:visibility="gone"
+    android:id="@+id/button"
+    android:background="#c21807"
+    android:layout_gravity="bottom"
+    android:text="Start Trip"
+    android:layout_height="wrap_content" />
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/id"-->
+        <!--android:layout_height="match_parent"></FrameLayout>-->
+
+
+
+
+</FrameLayout>

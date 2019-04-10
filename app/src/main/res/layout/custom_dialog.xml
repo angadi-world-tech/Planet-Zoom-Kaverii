@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Terms and Conditions"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="@dimen/edit_text_size"
+        android:text="Lorem ipsum"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="@dimen/edit_text_size"
+        android:text="Android Alert Dialog - Learn Android Programming and how to develop android ... use other functions provided by the builder class to customize the alert dialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Private Policy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/edit_text_size"
+        android:padding="16dp"
+        android:text="Worked for me too, why don't they mark it as answer"/>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#CC3232" />
+        <Button
+            android:id="@+id/customDialogOk"
+            android:layout_height="wrap_content"
+            android:layout_width="124dip"
+            android:text="I Agree"
+            android:background="@drawable/circle_btn_bg"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dip"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:id="@+id/card_category"
+    card_view:cardCornerRadius="2dp"
+    app:ignore="NamespaceTypo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/thumbnail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:src="@drawable/flat"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" >
+                <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"/>
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/flag"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="250dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/mike_icon" />-->
+
+                <ImageView
+                    android:id="@+id/textviewchat"
+                    android:layout_width="35dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:text="hello"
+                    android:background="@drawable/chat_icon"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Welcome"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/title1"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="0.25"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_weight=".0625"
+                        android:ellipsize="end"
+                        android:text="1.5" />
+
+                    <RatingBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style= "@style/CustomRatingBar"
+                        android:layout_weight="0.1225"
+                    android:id="@+id/ratingbar"
+                    android:numStars="5"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:stepSize="0.01"
+                    android:isIndicator="true"/>
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_weight=".0625"
+                        android:layout_width="0dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=" * date" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Hotel one"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/namehotel"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
